@@ -22,10 +22,10 @@ std::vector<int> Sort::getRandomSubset(const std::vector<int>& nums, int size) {
    
 }
 
-void Sorting::printList(const std::vector<int>& list) {
+void afterSort::printList(const std::vector<int>& list) {
     
 }
 
-void Sort::measureAndPrintRuntime(std::vector<int>& arr, const std::string& sortName, void (*sortFunction)(std::vector<int>&)) {
+void afterSort::measureAndPrintRuntime(std::vector<int>& arr, const std::string& sortName, void (*sortFunction)(std::vector<int>&)) {
     
 }
