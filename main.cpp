@@ -17,6 +17,12 @@ std::vector<int> getNumbers(const std::string& fname){
 }
 
 int main(int argc, char*argv[]){
-    std::ifstream ifs(argv[1]);
-   
+    std::vector<int> dataBase = getNumbers(argv[1]);//gets data base 
+
+    srand(time(nullptr));
+    for(int i = dataBase.size() - 1; i > 0; i--){//keeps random
+        
+    }
+
+    int s = 10;//size of list(amou tof numbers taken from database)
 }
