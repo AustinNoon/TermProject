@@ -1,17 +1,31 @@
-#include <chrono>
+#include "sort.h"
+#include <cstdlib>
+#include <ctime>
 
+void Sort::mergeSort(std::vector<int>& arr) {
+    
+}
 
-//function to benchmark the chosen sorting algorithm
-template <typename T>
-void benchmarkSort(void(*sortFunction)(T[], int), T arr[], int n, const std::string& algorithmName){
-    auto start = std::chrono::high_resolution_clock::now();
+void Sort::quickSort(std::vector<int>& arr) {
+    
+}
 
-    //call the sorting algorithm
-    sortFunction(arr, n);
+void Sort::insertionSort(std::vector<int>& arr) {
+    
+}
 
-    auto stop = std::chrono::high_resolution_clock::now();
-    auto duration = std::chrono::duration_cast<std::chrono::microseconds>(stop - start);
+void Sort::bucketSort(std::vector<int>& arr, int range) {
+    
+}
 
-    std::cout << "Algorithm: " << algorithmName << "\n";
-    std::cout << "Time taken by function: " << duration.count() << "microseconds\n\n";#
+std::vector<int> Sort::getRandomSubset(const std::vector<int>& nums, int size) {
+   
+}
+
+void Sorting::printList(const std::vector<int>& list) {
+    
+}
+
+void Sort::measureAndPrintRuntime(std::vector<int>& arr, const std::string& sortName, void (*sortFunction)(std::vector<int>&)) {
+    
 }
