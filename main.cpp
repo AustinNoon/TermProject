@@ -25,4 +25,5 @@ int main(int argc, char*argv[]){
     }
 
     int s = 10;//size of list(amou tof numbers taken from database)
+    std::vector<int> randomList(dataBase.begin(), dataBase.begin() + s);//gets list to be sorted
 }
