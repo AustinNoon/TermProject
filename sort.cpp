@@ -1,31 +1,39 @@
 #include "sort.h"
+#include <iostream>
+#include <fstream>
+#include <sstream>
 #include <cstdlib>
 #include <ctime>
 
-void Sort::mergeSort(std::vector<int>& arr) {
-    
+std::vector<int> Sort::getNumbers(const std::string& filename, int count){
+    std::vector<int> numbers;
+
+    std::ifstream inputFile(filename);
+
+    std::string line;
+    while(std::getline(inputFile, line)){
+        std::istringstream iss(line);
+        int num;
+        while(iss >> num){
+            numbers.push_back(num);
+        }
+    }
+
+    srand(static_cast<unsigned int>(time(nullptr)));
+
+    std::vector<int> ranNum;
+    for(int i = 0; i < count && !numbers.empty(); ++i){
+        int index = rand() % numbers.size();
+        ranNum.push_back(numbers[index]);
+        numbers.erase(numbers.begin() + index);
+    }
+
+    return ranNum;
 }
 
-void Sort::quickSort(std::vector<int>& arr) {
-    
-}
-
-void Sort::insertionSort(std::vector<int>& arr) {
-    
-}
-
-void Sort::bucketSort(std::vector<int>& arr, int range) {
-    
-}
-
-std::vector<int> Sort::getRandomSubset(const std::vector<int>& nums, int size) {
-   
-}
-
-void afterSort::printList(const std::vector<int>& list) {
-    
-}
-
-void afterSort::measureAndPrintRuntime(std::vector<int>& arr, const std::string& sortName, void (*sortFunction)(std::vector<int>&)) {
-    
+void Sort::printList(const std::vector<int>& list){
+    for(int num : list){
+        std::cout << num << " ";
+    }
+    std::cout << std::endl;
 }
