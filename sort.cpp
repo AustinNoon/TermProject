@@ -7,7 +7,7 @@
 #include <chrono>
 #include <iomanip>
 
-std::vector<int> Sort::getNumbers(const std::string& filename){
+std::vector<int> Sort::getData(const std::string& filename){
     std::vector<int> numbers;
 
     std::ifstream inputFile(filename);
