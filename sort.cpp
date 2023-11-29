@@ -24,6 +24,17 @@ void Sort::mergeSort(std::vector<int>& list){
     mergeHelper(list, 0, list.size() - 1);//calls mergeHelper
 }
 
+void Sort::mergeHelper(std::vector<int>& list, int left, int right){
+    if(left < right){//checks if left is smaller than right and keeps halving till one element is left
+        int mid = left + (right - left) / 2;//gets middle 
+
+        mergeHelper(list, left, mid);//uses recursion to sort left
+        mergeHelper(list, mid + 1, right);//uses recursion to sort right
+
+        merge(list, left, mid, right);//once the two are sorted, it gets merged
+    }
+}
+
 void Sort::printList(const std::vector<int>& list){
     for(int num : list){
         std::cout << num << " ";
