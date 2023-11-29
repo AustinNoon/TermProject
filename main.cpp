@@ -2,35 +2,60 @@
 #include <iostream>
 
 int main(int argc, char* argv[]){
-    std::string filename = argv[1];
-    std::vector<int> data = Sort::getData(filename);//gets data from file
 
+    //get filename of data from user
+    std::string filename = argv[1];
+    //append valuse from text file to data vector
+    std::vector<int> data = Sort::getData(filename);
+
+    //output original list in terminal
     std::cout << "Numbers: ";
     Sort::printList(data);
     std::cout << std::endl;
 
-    std::vector<int> insertionSortNumbers = data;//gets original data
-    Sort::insertionSort(data);
+    //create new vector set to original list
+    std::vector<int> insertionSortNumbers = data;
+    //sort new data directly in the vector created
+    Sort::insertionSort(insertionSortNumbers);
+
+    //create file name for algorithm
+    std::string outName = "InsertionSortedList.txt";
+    //save sorted data to created file
+    Sort::saveSortedToFile(insertionSortNumbers, outName);
+
+    //output the runtime for the method in the terminal
     std::cout << "Insertion Sort: ";
-    Sort::printList(data);
     Sort::runTime(Sort::insertionSort, insertionSortNumbers);
     std::cout << std::endl;
 
-    std::vector<int> quickData = Sort::getData(filename);//gets original data
-    std::vector<int> quickSortNumbers = quickData;
-    Sort::quickSort(quickSortNumbers);
+    //create new vector set to original list
+    std::vector<int> quickData = Sort::getData(filename);
+    //sort new data directly in the vector created
+    Sort::quickSort(quickData);
+
+    //change file name for algorithm
+    outName = "QuickSortedList.txt";
+    //save sorted data to created file
+    Sort::saveSortedToFile(quickData, outName);
+
+    //output the runtime for the method in the terminal
     std::cout << "Quick Sort: ";
-    Sort::printList(quickSortNumbers);
-    Sort::runTime(Sort::quickSort, quickSortNumbers);
+    Sort::runTime(Sort::quickSort, quickData);
     std::cout << std::endl;
 
-    std::vector<int> mergeData = Sort::getData(filename);//gets original data
-    
-    std::vector<int> mergeSortNumbers = mergeData;
-    Sort::mergeSort(mergeSortNumbers);
+    //create new vector set to original list
+    std::vector<int> mergeData = Sort::getData(filename);
+    //sort new data directly in the vector created
+    Sort::mergeSort(mergeData);
+
+    //change file name for algorithm
+    outName = "MergeSortedList.txt";
+    //save sorted data to created file
+    Sort::saveSortedToFile(mergeData, outName);
+
+    //output the runtime for the method in the terminal
     std::cout << "Merge Sort: ";
-    Sort::printList(mergeSortNumbers);
-    Sort::runTime(Sort::mergeSort, mergeSortNumbers);
+    Sort::runTime(Sort::mergeSort, mergeData);
     std::cout << std::endl;
 
     return 0;
