@@ -35,6 +35,49 @@ void Sort::mergeHelper(std::vector<int>& list, int left, int right){
     }
 }
 
+void Sort::merge(std::vector<int>& list, int left, int mid, int right){//functions to merge both sorted halves back together
+    int x1 = mid - left + 1;//gets size of left
+    int x2 = right - mid;//gets size of right
+
+    std::vector<int> Left(x1);//temp vector for left
+    std::vector<int> Right(x2);//temp vector for right
+
+    for(int i = 0; i < x1; ++i){//gets values for left side
+        Left[i] = list[left + i];
+    }
+
+    for(int j = 0; j < x2; ++j){//gets values on right side
+        Right[j] = list[mid + 1 + j];
+    }
+    
+
+    int i = 0, j = 0;
+    int k = left;
+
+    while(i < x1 && j < x2){//merge elements from left
+        if(Left[i] <= Right[j]){
+            list[k] = Left[i];
+            i++;
+        }else{//merges right
+            list[k] = Right[j];
+            j++;
+        }
+        k++;
+    }
+
+    while(i < x1){//gets values from left
+        list[k] = Left[i];
+        i++;
+        k++;
+    }
+
+    while(j < x2){//gets values from right
+        list[k] = Right[j];
+        j++;
+        k++;
+    }
+}
+
 void Sort::quickSort(std::vector<int>& list){ // public method to initiate quickSort on a vector
     quickHelper(list, 0, list.size() - 1); //base parameters for initialization
 }
