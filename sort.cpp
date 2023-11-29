@@ -35,13 +35,6 @@ void Sort::mergeHelper(std::vector<int>& list, int left, int right){
     }
 }
 
-void Sort::printList(const std::vector<int>& list){
-    for(int num : list){
-        std::cout << num << " ";
-    }
-    std::cout << std::endl;
-}
-
 void Sort::quickSort(std::vector<int>& list){ // public method to initiate quickSort on a vector
     quickHelper(list, 0, list.size() - 1); //base parameters for initialization
 }
@@ -66,4 +59,11 @@ int Sort::partition(std::vector<int>& list, int low, int high){//partition the v
     }
     std::swap(list[i + 1],list[high]); // swap the pivot element with the element at the next index of the smaller element 
     return i + 1; // return the index of the pivot element
+}
+
+void Sort::printList(const std::vector<int>& list){
+    for(int num : list){
+        std::cout << num << " ";
+    }
+    std::cout << std::endl;
 }
