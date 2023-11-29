@@ -19,7 +19,34 @@ std::vector<int> Sort::getNumbers(const std::string& filename){
 
     return numbers;
 }
-   
+
+//insertion sort method
+void Sort::insertionSort(std::vector<int>& list){
+
+    //for loop to iterate through the list
+    //start at the second number as index 1
+    for(int i = 1; i < list.size(); i++){
+
+        //initialize temporary variable to hold the value of the right number
+        int temp = list[i];
+
+        //initialize j to be the place of the number to the left of temp
+        int j = i - 1;
+
+        //while left number is greater than the right number,
+        while(j >= 0 && list[j] > temp){
+
+            //swap left and right number
+            list[j + 1] = list[j];
+            //decrement j to move left in the list
+            j--;
+        }
+
+        //before for loop repeats, assign temp to the right of list[j]
+        list[j + 1] = temp;
+    }
+}
+
 void Sort::mergeSort(std::vector<int>& list){
     mergeHelper(list, 0, list.size() - 1);//calls mergeHelper
 }
