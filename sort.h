@@ -12,7 +12,7 @@ public:
     static void insertionSort(std::vector<int>& list);
     static void quickSort(std::vector<int>& list);
     static void mergeSort(std::vector<int>& list);
-    static void bucketSort();
+    static void bucketSort(std::vector<int>& list);
     static void runTime(void(*sortFunction)(std::vector<int>&), std::vector<int>& list);
 private: 
     static void quickHelper(std::vector<int>& list, int low, int high);
