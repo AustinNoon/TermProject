@@ -119,7 +119,7 @@ void Sort::quickHelper(std::vector<int>& list, int low, int high){ //helper meth
 }
 
 int Sort::partition(std::vector<int>& list, int low, int high){//partition the vector and return the index of the pivot element 
-    int pivot = list(high); // choose the right most element as the pivot
+    int pivot = list[high]; // choose the right most element as the pivot
     int i = low - 1; // initialize the index of the smaller element 
     for(int j = low; j <= high - 1; ++j){ //iterate through the elements from low to high - 1
         if(list[j] < pivot){ // if current element is smaller than the pivot
