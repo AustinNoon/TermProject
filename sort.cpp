@@ -20,7 +20,9 @@ std::vector<int> Sort::getNumbers(const std::string& filename){
     return numbers;
 }
    
-
+void Sort::mergeSort(std::vector<int>& list){
+    mergeHelper(list, 0, list.size() - 1);//calls mergeHelper
+}
 
 void Sort::printList(const std::vector<int>& list){
     for(int num : list){
