@@ -7,7 +7,7 @@
 
 class Sort{
 public:
-    static std::vector<int> getNumbers(const std::string& filename);
+    static std::vector<int> getData(const std::string& filename);
     static void printList(const std::vector<int>& list);
     static void insertionSort(std::vector<int>& list);
     static void quickSort(std::vector<int>& list);
