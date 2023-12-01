@@ -153,9 +153,65 @@ void Sort::saveSortedToFile(const std::vector<int>& list, std::string outName){
     outFile.close();
 }
 
+int Sort::findMin(std::vector<int>& list){
+    if(list.empty())
+    {
+        return -1;
+    }
+
+    int min = list[0];
+    for(int num = 0; num < list.size(); num++){
+        while(num < min){
+            min = num;
+        }
+    }
+    return min;
+}
+
+int Sort::findMax(std::vector<int>& list){
+    if(list.empty()){
+        return -1;
+    }
+
+    int max = list[0];
+    for(int num = 0; num <list.size(); num++){
+        if(num > max){
+            max = num;
+        }
+    }
+
+    return max;
+}
+
+void Sort::bucketSort(std::vector<int>& list){
+    int min = findMin(list);//gets min
+    int max = findMax(list);//gets max
+
+    int size = (max - min) / list.size() - 1;
+    
+    std::vector<std::vector<int>> buckets(list.size());
+
+    for(int val = 0; val < list.size(); val++){
+        int index = (val - min) / size;
+        buckets[index].push_back(val);
+    }
+
+    for(auto& bucket : buckets){
+        insertionSort(bucket);
+    }
+
+    int temp = 0;
+    for(const auto& bucket : buckets){
+        for(int num : bucket){
+            list[temp++] = num;
+        }
+    }
+}
+
 void Sort::printList(const std::vector<int>& list){
     for(int num : list){
         std::cout << num << " ";
     }
     std::cout << std::endl;
 }
+
