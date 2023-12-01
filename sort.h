@@ -13,14 +13,18 @@ public:
     static void insertionSort(std::vector<int>& list);
     static void quickSort(std::vector<int>& list);
     static void mergeSort(std::vector<int>& list);
-    static void bucketSort();
+    void bucketSort(std::vector<int>& list);
     static void runTime(void(*sortFunction)(std::vector<int>&), std::vector<int>& list);
+
 private:
     static void quickHelper(std::vector<int>& list, int low, int high);
     static int partition(std::vector<int>& list, int low, int high);
     static void merge(std::vector<int>& list, int left, int mid, int right);
     static void mergeHelper(std::vector<int>& list, int left, int right);
+    int findMin(std::vector<int>& list);
+    int findMax(std::vector<int>& list);
 };
 
 #endif
+
 
