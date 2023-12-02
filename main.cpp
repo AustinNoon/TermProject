@@ -29,21 +29,6 @@ int main(int argc, char* argv[]){
     std::cout << std::endl;
 
     //create new vector set to original list
-    std::vector<int> quickData = Sort::getData(filename);
-    //sort new data directly in the vector created
-    Sort::quickSort(quickData);
-
-    //change file name for algorithm
-    outName = "QuickSortedList.txt";
-    //save sorted data to created file
-    Sort::saveSortedToFile(quickData, outName);
-
-    //output the runtime for the method in the terminal
-    std::cout << "Quick Sort: ";
-    Sort::runTime(Sort::quickSort, quickData);
-    std::cout << std::endl;
-
-    //create new vector set to original list
     std::vector<int> mergeData = Sort::getData(filename);
     //sort new data directly in the vector created
     Sort::mergeSort(mergeData);
@@ -56,6 +41,21 @@ int main(int argc, char* argv[]){
     //output the runtime for the method in the terminal
     std::cout << "Merge Sort: ";
     Sort::runTime(Sort::mergeSort, mergeData);
+    std::cout << std::endl;
+
+    //create new vector set to original list
+    std::vector<int> quickData = Sort::getData(filename);
+    //sort new data directly in the vector created
+    Sort::quickSort(quickData);
+
+    //change file name for algorithm
+    outName = "QuickSortedList.txt";
+    //save sorted data to created file
+    Sort::saveSortedToFile(quickData, outName);
+
+    //output the runtime for the method in the terminal
+    std::cout << "Quick Sort: ";
+    Sort::runTime(Sort::quickSort, quickData);
     std::cout << std::endl;
 
     //create new vector set to original list
