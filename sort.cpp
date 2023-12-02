@@ -187,11 +187,11 @@ void Sort::bucketSort(std::vector<int>& list){
     int min = findMin(list);//gets min
     int max = findMax(list);//gets max
 
-    int size = (max - min) / list.size() - 1;
+    int size = (max - min) / (list.size() - 1);
     
     std::vector<std::vector<int>> buckets(list.size());
 
-    for(unsigned int val = 0; val < list.size(); val++){
+    for(unsigned int val = 1; val < list.size(); val++){
         int index = (val - min) / size;
         buckets[index].push_back(val);
     }
