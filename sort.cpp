@@ -25,7 +25,7 @@ void Sort::insertionSort(std::vector<int>& list){
 
     //for loop to iterate through the list
     //start at the second number as index 1
-    for(int i = 1; i < list.size(); i++){
+    for(unsigned int i = 1; i < list.size(); i++){
 
         //initialize temporary variable to hold the value of the right number
         int temp = list[i];
@@ -159,7 +159,7 @@ int Sort::findMin(std::vector<int>& list){
         return -1;
     }
 
-    int min = list[0];
+    unsigned int min = list[0];
     for(int num = 0; num < list.size(); num++){
         while(num < min){
             min = num;
@@ -173,7 +173,7 @@ int Sort::findMax(std::vector<int>& list){
         return -1;
     }
 
-    int max = list[0];
+    unsigned int max = list[0];
     for(int num = 0; num <list.size(); num++){
         if(num > max){
             max = num;
