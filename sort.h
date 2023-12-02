@@ -13,9 +13,9 @@ public:
     static void insertionSort(std::vector<int>& list);
     static void quickSort(std::vector<int>& list);
     static void mergeSort(std::vector<int>& list);
-    void bucketSort(std::vector<int>& list);
-    int findMin(std::vector<int>& list);
-    int findMax(std::vector<int>& list);
+    static void bucketSort(std::vector<int>& list);
+    static int findMin(std::vector<int>& list);
+    static int findMax(std::vector<int>& list);
     static void runTime(void(*sortFunction)(std::vector<int>&), std::vector<int>& list);
 
 private:
