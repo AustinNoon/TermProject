@@ -9,7 +9,7 @@ int main(int argc, char* argv[]){
     std::vector<int> data = Sort::getData(filename);
 
     //output original list in terminal
-    std::cout << "Numbers: ";
+    std::cout << "Data: ";
     Sort::printList(data);
     std::cout << std::endl;
 
