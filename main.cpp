@@ -58,5 +58,21 @@ int main(int argc, char* argv[]){
     Sort::runTime(Sort::mergeSort, mergeData);
     std::cout << std::endl;
 
+    //create new vector set to original list
+    std::vector<int> bucketData = Sort::getData(filename);
+    //sort new data directly in the vector created
+    Sort::bucketSort(bucketData);
+
+    //change file name for algorithm
+    outName = "BucketSortedList.txt";
+    //save sorted data to created file
+    Sort::saveSortedToFile(bucketData, outName);
+
+    //output the runtime for the method in the terminal
+    std::cout << "Bucket Sort: ";
+    Sort::runTime(Sort::bucketSort, bucketData);
+    std::cout << std::endl;
+
+
     return 0;
 }
