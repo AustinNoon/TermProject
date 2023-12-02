@@ -160,7 +160,7 @@ int Sort::findMin(std::vector<int>& list){
     }
 
     unsigned int min = list[0];
-    for(int num = 0; num < list.size(); num++){
+    for(unsigned int num = 0; num < list.size(); num++){
         while(num < min){
             min = num;
         }
@@ -174,7 +174,7 @@ int Sort::findMax(std::vector<int>& list){
     }
 
     unsigned int max = list[0];
-    for(int num = 0; num <list.size(); num++){
+    for(unsigned int num = 0; num <list.size(); num++){
         if(num > max){
             max = num;
         }
@@ -191,7 +191,7 @@ void Sort::bucketSort(std::vector<int>& list){
     
     std::vector<std::vector<int>> buckets(list.size());
 
-    for(int val = 0; val < list.size(); val++){
+    for(unsigned int val = 0; val < list.size(); val++){
         int index = (val - min) / size;
         buckets[index].push_back(val);
     }
