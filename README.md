@@ -9,7 +9,7 @@
 * First you split the array into two halves that are equal
 ## Program
 ## Compile
-* g++ -std=c++11 -Wall main.cpp sort.cpp -o generator
+* g++ -std=c++11 -Wall main.cpp datasort.cpp -o generator
 ## Input
 * ./generator <file.txt>
 ## Output
@@ -20,8 +20,8 @@
 * BucketSortedList.txt
 ## Files Included
 * main.cpp
-* sort.cpp
-* sort.h
+* datasort.cpp
+* datasort.h
 * random.txt
 * reverse.txt
 * partial.txt
