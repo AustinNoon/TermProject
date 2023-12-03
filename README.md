@@ -9,7 +9,7 @@
 * First you split the array into two halves that are equal
 ## Program
 ## Compile
-* g++ -std=c++11 -Wall main.cpp datasort.cpp -o generator
+* g++ main.cpp datasort.cpp -o generator
 ## Input
 * ./generator <file.txt>
 ## Output
