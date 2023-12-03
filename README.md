@@ -16,11 +16,13 @@
 ## Bucket Sort
 *  Bucket Sort is an algorithm that divides elements in buckets based on their values , subsequently each bucket then gets sorted and lastly all the buckets get concatenates
 
-![image](https://github.com/AustinNoon/TermProject/assets/150630356/da637da7-e57f-498f-bb4a-72461ee91b87)
+![image](https://github.com/AustinNoon/TermProject/assets/150630356/da637da7-e57f-498f-bb4a-72461ee91b87) 
 ## Program
 * Takes in a text file through CLA
 * File will either be ordered randomly, reverse, partially, or already sorted
+  * Each file with be different in sizes
 * When passed through, data will be put into a list and sorted by each of the four algorithms
+* Run time for each algorithm is printed in terminal
 ## Compile
 * g++ main.cpp datasort.cpp -o generator
 ## Input
