@@ -10,6 +10,11 @@
 ![image](https://github.com/AustinNoon/TermProject/assets/150630356/4b1d4bdc-8bdd-4fcd-86e8-9873290fc5c3)
 * Then you split each half and then merge them in order
 * The merge the left and right back together in order
+## QuickSort
+## Bucket Sort
+*  Bucket Sort is an algorithm that divides elements in buckets based on their values , subsequently each bucket then gets sorted and lastly all the buckets get concatenates
+![image](https://github.com/AustinNoon/TermProject/assets/150630356/da637da7-e57f-498f-bb4a-72461ee91b87)
+
 ## Program
 ## Compile
 * g++ main.cpp datasort.cpp -o generator
