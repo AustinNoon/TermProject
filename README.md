@@ -13,6 +13,11 @@
 ## Input
 * ./generator <file.txt>
 ## Output
+* For each data file iputted, 4 files with be outputted for each algorithm with its sorted list
+* InsertionSortedList.txt
+* MergeSortedList.txt
+* QuickSortedList.txt
+* BucketSortedList.txt
 ## Files Included
 * main.cpp
 * sort.cpp
