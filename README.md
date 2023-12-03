@@ -13,7 +13,7 @@
 ## Input
 * ./generator <file.txt>
 ## Output
-* For each data file iputted, 4 files with be outputted for each algorithm with its sorted list
+### For each data file inputted, 4 files with be outputted for each algorithm with its sorted list
 * InsertionSortedList.txt
 * MergeSortedList.txt
 * QuickSortedList.txt
