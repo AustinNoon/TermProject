@@ -1,6 +1,6 @@
 #pragma once
-#ifndef SORT_H
-#define SORT_H
+#ifndef DATASORT_H
+#define DATASORT_H
 
 #include <vector>
 #include <string>
