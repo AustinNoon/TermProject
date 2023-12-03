@@ -17,6 +17,8 @@
 *  Bucket Sort is an algorithm that divides elements in buckets based on their values , subsequently each bucket then gets sorted and lastly all the buckets get concatenates
 
 ![image](https://github.com/AustinNoon/TermProject/assets/150630356/da637da7-e57f-498f-bb4a-72461ee91b87) 
+* Insertion sort is applied to each bucket
+* All the buckets get concatenated
 ## Program
 * Takes in a text file through CLA
 * File will either be ordered randomly, reverse, partially, or already sorted
