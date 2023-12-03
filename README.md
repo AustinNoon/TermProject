@@ -1,5 +1,4 @@
-# TermProject
-## CSC212 Term Project Fall 2023
+# CSC212 Term Project Fall 2023
 # Overview
 * Implementations of 4 sorting algorithms
 ## Insertion
