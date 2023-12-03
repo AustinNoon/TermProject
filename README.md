@@ -10,6 +10,8 @@ CSC212 term project fall 2023
 * First you split the array in to two halves that are equal
 ## Compile
 * g++ -std=c++11 -Wall main.cpp sort.cpp -o generator
+## Input
+* ./generator <file.txt>
 ## Files Included
 * main.cpp
 * sort.cpp
