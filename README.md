@@ -8,10 +8,12 @@ CSC212 term project fall 2023
 ## Merge 
 ![image](https://github.com/AustinNoon/TermProject/assets/150630356/b012af3c-2ee1-4cf5-a478-b7cf8c6a2b59)
 * First you split the array into two halves that are equal
+## Program
 ## Compile
 * g++ -std=c++11 -Wall main.cpp sort.cpp -o generator
 ## Input
 * ./generator <file.txt>
+## Output
 ## Files Included
 * main.cpp
 * sort.cpp
