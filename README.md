@@ -14,6 +14,8 @@
 * Then you split each half and then merge them in order
 * The merge the left and right back together in order
 ## QuickSort
+![image](https://github.com/AustinNoon/TermProject/assets/150630356/15b0ba26-0d8e-4b73-81f7-700bfd485f18)
+
 ## Bucket Sort
 *  Bucket Sort is an algorithm that divides elements in buckets based on their values , subsequently each bucket then gets sorted and lastly all the buckets get concatenates
 
