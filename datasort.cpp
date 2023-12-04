@@ -36,13 +36,13 @@ void Sort::insertionSort(std::vector<int>& list){
         //while left number is greater than the right number,
         while(j >= 0 && list[j] > temp){
 
-            //swap left and right number
+            //move left number to the right
             list[j + 1] = list[j];
             //decrement j to move left in the list
             j--;
         }
 
-        //before for loop repeats, assign temp to the right of list[j]
+        //before for loop repeats, assign list[j + 1] to temp
         list[j + 1] = temp;
     }
 }
