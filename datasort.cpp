@@ -136,8 +136,8 @@ void Sort::runTime(void(*sortFunction)(std::vector<int>&), std::vector<int>& lis
     sortFunction(list); //call the sorting function to be measured 
     auto stop = std::chrono::high_resolution_clock::now(); // point to stop the clock
 
-    auto duration = std::chrono::duration_cast<std::chrono::microseconds>(stop - start).count(); //finding the duration of algorithm by subtracting stop from start
-    std::cout << "Time taken by: " << std::fixed << std::setprecision(6) << duration << " microseconds" << std::endl; //print the time taken to run function
+    auto duration = std::chrono::duration_cast<std::chrono::nanoseconds>(stop - start).count(); //finding the duration of algorithm by subtracting stop from start
+    std::cout << "Time taken by: " << std::fixed << std::setprecision(6) << duration << " nanoseconds" << std::endl; //print the time taken to run function
 }
 
 void Sort::saveSortedToFile(const std::vector<int>& list, std::string outName){
