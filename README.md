@@ -28,6 +28,7 @@
   * Each file with be different in sizes
 * When passed through, data will be put into a list and sorted by each of the four algorithms
 * Run time for each algorithm is printed in terminal
+* Sotrted data will be outputted to 4 different files
 ## Compile
 * g++ main.cpp datasort.cpp -o generator
 ## Input
