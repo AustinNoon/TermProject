@@ -4,7 +4,7 @@
 ## Insertion
 ![image](https://github.com/AustinNoon/TermProject/assets/150630356/2b890e21-591b-4bec-b5e5-f43b90638615)
 
-* Look at the first 2 elements of the array and swap if needed until it is in the right place. Then move to the next 2 in the array.
+* Move value by value in the list comparing the current value with the one directly to it's right. If it is out of order, move the current value one index to the right and repeat this process with the value being compared and all values to the left until it has either reched the index 0 or passes the comparison. Continue doing this until the list data has been fully traversed.
 ## Merge 
 ![image](https://github.com/AustinNoon/TermProject/assets/150630356/b012af3c-2ee1-4cf5-a478-b7cf8c6a2b59)
 * First you split the array into two halves that are equal
@@ -17,7 +17,7 @@
 ![image](https://github.com/AustinNoon/TermProject/assets/150630356/15b0ba26-0d8e-4b73-81f7-700bfd485f18)
 
 ## Bucket Sort
-*  Bucket Sort is an algorithm that divides elements in buckets based on their values , subsequently each bucket then gets sorted and lastly all the buckets get concatenates
+*  Bucket Sort is an algorithm that divides elements in buckets based on their values, subsequently each bucket then gets sorted and lastly all the buckets get concatenates
 
 ![image](https://github.com/AustinNoon/TermProject/assets/150630356/da637da7-e57f-498f-bb4a-72461ee91b87) 
 * Insertion sort is applied to each bucket
@@ -28,7 +28,7 @@
   * Each file with be different in sizes
 * When passed through, data will be put into a list and sorted by each of the four algorithms
 * Run time for each algorithm is printed in terminal
-* Sotrted data will be outputted to 4 different files
+* Sorted data will be outputted to 4 different files
 ## Compile
 * g++ main.cpp datasort.cpp -o generator
 ## Input
