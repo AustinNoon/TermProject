@@ -39,7 +39,7 @@
 * MergeSortedList.txt
 * QuickSortedList.txt
 * BucketSortedList.txt
-## Terminal
+### Terminal
 ![image](https://github.com/AustinNoon/TermProject/assets/150630356/ff8cc4f8-db45-4caf-bfd1-3738acf53ad4)
 ## Files Included
 * main.cpp
