@@ -4,6 +4,4 @@
 format: jb-book
 root: intro
 chapters:
-- file: datasort.cpp
-- file: datasort.h
-- file: main.cpp
+- file: README.md
